@@ -1,0 +1,38 @@
+body {
+	color: #000000;
+	font-family: "PTSans", "Arial", serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: normal;
+}
+h2 {
+	font-size: 30px;
+}
+h3 {
+	font-size: 21px;
+	font-weight: bold;
+}
+li {
+	font-weight: bold;
+}
+.btn {
+	font-size: 21px;
+	font-family: "PTSans", "Arial", serif;
+	font-weight: bold;
+}
+h4 {
+	font-size: 16px;
+}
+.sorting {
+	font-size: 12px;
+}
+.rating {
+	color: #8b8b8b;
+}
+.active {
+	color: #81b3d2;
+}
+.noactive {
+	color: #c7c7c7;
+	border-bottom: 1px dotted #81b3d2;
+}

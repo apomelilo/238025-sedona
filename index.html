@@ -2,10 +2,11 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<link href="css/style.css" rel="stylesheet">
 		<title>HTML Academy: Седона</title>
 	</head>
 	<body>
-		<header class="header-page">
+	<header class="header-page">
 		<nav class="header-main">
 			<ul>
 				<li>Информация</li>
@@ -17,74 +18,71 @@
 		</nav>
 	</header>
 		<div class="info">
-			<b class="welcome">Welcome</b><br>
-			<b class="welcome-1">to the gargeous</b><br>
-			<b class="name">SEDONA</b><br>
-			<b class="info">&quot;Because the Grand lanyon sucks!&quot; </b><br>
-			<b class="description">Седона - небольшой городок в Аризоне, заслуживающий большего!</b><br>
-			<b class="cause">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</b>
+			<img src="img/background.jpg" alt="Горы"><br>
+			<h3>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h3>
+			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 		</div>
 		<div class="info-cause">
 			<div class="cause1">
-				<b class="cause1">Настоящий городок</b>
-				<b class="description">- №1 -<br>
-				Седона - не аттракцион для туристов, там течет своя жизнь</b>
+				<h3>Настоящий городок</h3>
+				<p>- №1 -<br>
+				Седона - не аттракцион для туристов, там течет своя жизнь</p>
 				<div class="cause-foto">
-					<img src="img/cause-foto1.png" alt="Фото города">
+					<img src="img/cause-foto1.jpg" alt="Фото города">
 				</div>
 			</div>
 			<div class="features">
 				<div class="features-item">
-					<img src="img/feature1.jpg" alt="Жилье">
+					<img src="img/feature1.png" alt="Жилье">
 					<h3>Жилье</h3>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</div>
 				<div class="features-item">
-					<img src="img/feature2.jpg" alt="Еда">
+					<img src="img/feature2.png" alt="Еда">
 					<h3>Еда</h3>
 					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</div>
 				<div class="features-item">
-					<img src="img/feature3.jpg" alt="Сувениры">
+					<img src="img/feature3.png" alt="Сувениры">
 					<h3>Сувениры</h3>
 					<p>Не только китайского, но и местного производства!</p>
 				</div>
 			</div>
 			<div class="cause2">
 				<div class="img/cause-foto2.png">
-					<img src="img/cause-foto1.png" alt="Фото города">
+					<img src="img/cause-foto2.jpg" alt="Фото города">
 				</div>
-				<b class="cause1">Там есть мост дьявола</b>
-				<b class="description">- №2 -<br>
-				Да, по нему можно пройти! Если конечно вы осмелитесь</b>
+				<h3>Там есть мост дьявола</h3>
+				<p>- №2 -<br>
+				Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 			</div>
 			<div class="causes">
 				<div class="cause-item">
 					<h3>Небольшая площадь</h3>
-					<b class="description">- №3 - <br>
+					<p>- №3 - <br>
 					Все достопримечательности находятся очень близко
-					</b>
+					</p>
 				</div>
 			<div class="cause-item">
 				<h3>Красивая дорога</h3>
-				<b class="description">- №4 - <br>
+				<p>- №4 - <br>
 				Ехать в Седону из Лас-Вегаса совсем не скучно!
-				</b>
+				</p>
 			</div>
 			<div class="cause-item">
 				<h3>Мало туристов</h3>
-				<b class="description">- №5 - <br>
+				<p>- №5 - <br>
 				Большинство едет в Гранд Каньон и толпится там
-				</b>
+				</p>
 			</div>
 		</div>
 	 </div>
 	<div class="search">
 		<h2>Заинтересовались?</h2>
-		<b class="description">Укажите предполагаемые даты поездки,<br>
-		и мы покажем вам лучшие предложения гостиниц в Седоне</b>
+		<p>Укажите предполагаемые даты поездки,<br>
+		и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 		<form class="search-form" action="#" method="post">
-			<b class="">Поиск гостиницы в Седоне</b><br>
+			<h3>Поиск гостиницы в Седоне</h3>
 			<label for="arrival-date">Дата заезда</label>
 			<input type="date" value="24 апреля 2016" name="arrival-date" id="arrival-date"><br>
 			<label for="departure-date">Дата выезда</label>
@@ -93,7 +91,7 @@
 			<input type="number" min="1" max="10" step="1" value="2" name="adults" id="adults">
 			<label for="children">Дети</label>
 			<input type="number" min="0" max="10" step="1" value="0" name="children" id="children">
-			<button type="submit">Найти</button>
+			<button type="submit" class="btn">Найти</button>
 		</form>
 	</div>
 	<footer class="footer-page">
@@ -102,7 +100,7 @@
 		</div>
 		<div class="footer-social">
 			<a href="#">
-				<img src="img/vk.png" alt="Вконтакте">
+				<img src="img/t.png" alt="Twitter">
 			</a>
 			<a href="#">
 				<img src="img/f.png" alt="Facebook">

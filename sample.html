@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="header-page">
@@ -18,7 +19,7 @@
 	</header>
 	<div class="criterion">
 		<div class="infrastructure">
-			<h3>Инфраструктура:</h3>
+			<h4>Инфраструктура:</h4>
 			<div class="form-group">
 				<input type="checkbox" name="pool" value="pool" id="pool" checked>
 				<label for="pool">Бассейн</label>	
@@ -33,7 +34,7 @@
 			</div>
 		</div>
 		<div class="type">
-			<h3>Тип жилья:</h3>
+			<h4>Тип жилья:</h4>
 			<div class="form-group">
 				<input type="checkbox" name="hotel" value="hotel" id="hotel" checked>
 				<label for="hotel">Гостиница</label>	
@@ -48,7 +49,7 @@
 			</div>
 		</div>
 		<div class="price-range">
-			<h3>Стоимость в сутки (р):</h3>
+			<h4>Стоимость в сутки (р):</h4>
 			<table>
 				<tr>
 					<td>От 0</td>
@@ -61,10 +62,10 @@
 	<div class="sample">
 		<div class="sample-criterion">
 			<h3>Найдено: 3</h3>
-			<b>Сортировка:</b>
+			<b class="sorting">Сортировка:</b>
 			<b class="sorting active">По цене</b>
-			<b class="sorting"><a href="#">По типу</a></b>
-			<b class="sorting"><a href="#">По рейтингу</a></b>
+			<b class="sorting noactive">По типу</b>
+			<b class="sorting noactive">По рейтингу</b>
 		</div>
 		<div class="catalog">
 			<div class="catalog-item">
@@ -83,7 +84,7 @@
 				<b class="rating">Рейтинг: 8,5</b>
 			</div>
 			<div class="catalog-item">
-				<img src="img/Desert.jpg" alt="Desert Quail Inn">
+				<img src="img/desert.jpg" alt="Desert Quail Inn">
 				<h3>Desert Quail Inn</h3>
 				<table class="description">
 					<tr>
@@ -98,7 +99,7 @@
 				<b class="rating">Рейтинг: 8,9</b>
 			</div>
 			<div class="catalog-item">
-				<img src="img/Villas.jpg" alt="Villas at Poco Diablo">
+				<img src="img/villas.jpg" alt="Villas at Poco Diablo">
 				<h3>Villas at Poco Diablo</h3>
 				<table class="description">
 					<tr>
@@ -120,7 +121,7 @@
 		</div>
 		<div class="footer-social">
 			<a href="#">
-				<img src="img/vk.png" alt="Вконтакте">
+				<img src="img/t.png" alt="Twitter">
 			</a>
 			<a href="#">
 				<img src="img/f.png" alt="Facebook">
