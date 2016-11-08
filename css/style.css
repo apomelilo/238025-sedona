@@ -123,6 +123,7 @@ ul {
 }
 .causes-item:last-child {
 	float: right;
+	width: 33%
 }
 .search-description {
 	background-color: #ffffff;
@@ -154,6 +155,7 @@ ul {
 	height: 25px;
 	padding-top: 13px;
 	margin-bottom: 29px;
+	width: 111px;
 }
 input[type="text"] {
 	background-color: #f2f2f2;
@@ -172,11 +174,12 @@ input[type="text"] {
 	height: 25px;
 	padding-top: 13px;
 	margin-bottom: 29px;
+	width: 111px;
 }
 .adults-quantity {
 	width: 117px;
 	text-align: center;
-	margin-left: 24px;
+	/*margin-left: 24px;*/
 	height: 25px;
 }
 .children {
@@ -191,6 +194,7 @@ input[type="text"] {
 }
 .adults {
 	height: 25px;
+	float: left;
 }
 .btn {
 	font-size: 21px;
@@ -244,18 +248,21 @@ input[type="text"] {
 	color: #ffffff;
 	padding-top: 31px;
 	float: left;
+	width: 211px;
 }
 .type {
 	float: left;
 	padding-left: 110px;
 	color: #ffffff;
 	padding-top: 31px;
+	width: 231px;
 }
 .price-range {
 	float: right;
 	padding-right: 6%;
 	color: #ffffff;
 	padding-top: 31px;
+	width: 326px;
 }
 .sample-criterion {
 	padding-left: 6%;
@@ -289,20 +296,27 @@ input[type="text"] {
 .catalog-description {
 	margin-left: 30px;
 	float: left;
+	width: 331px;
 }
 .catalog-name {
 	margin: 0px;
 	margin-bottom: 10px;
+	float: left;
+	width: 331px;
 }
 .catalog-type {
 	/*padding-bottom: 19px;*/
 	font-weight: normal;
+	float: left;
+	width: 110px;
 }
 .catalog-price {
 	clear: right;
 	/*padding-bottom: 19px;*/
-	margin-left: 40px;
+	margin-left: 5px;
 	font-weight: normal;
+	float: left;
+	width: 142px;	
 }
 .catalog-btn-more  {
 	width: 110px;
@@ -323,7 +337,7 @@ input[type="text"] {
 	vertical-align: middle;*/
 	margin-top: 10px;
 	border: 0;
-	margin-left: 7px;
+	/*margin-left: 7px;*/
 	color: #ffffff;
 	font-weight: bold;
 }
