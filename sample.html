@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<meta charset="utf-8">
-		<title>HTML Academy: Седона</title>
+		<meta charset="utf-8">		
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
 		<link href="css/style.css" rel="stylesheet">
+		<title>HTML Academy: Седона</title>
 	</head>
 	<body>
 		<header class="header-page">
-		<nav class="header-main">
+		<nav class="header-main clearfix">
 			<ul>
-				<li class="main-info">Информация</li>
-				<li class="foto-video">Фото и видео</li>
-				<li class="logo"><img src="img/logo.png" width="138" height="70" alt="Логотип"></li>
-				<li class="hotel">Гостиницы</li>
-				<li class="card">Карта штата</li>
+				<li class="main-info"><a href="#">Информация</a></li>
+				<li class="foto-video"><a href="#">Фото и видео</a></li>
+				<li class="hotel"><a href="#">Гостиницы</a></li>
+				<li class="card"><a href="#">Карта штата</a></li>
 			</ul>
+			<div class="logo"><a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип"></a></div>
 		</nav>
 	</header>
-	<div class="criterion clearfix">
+	<form class="criterion clearfix" action="#" method="get">
 		<div class="infrastructure ">
 			<h4>Инфраструктура:</h4>
 			<div class="form-group">
@@ -58,14 +59,14 @@
 			</table>
 			<button type="submit">Показать</button>
 		</div>
-	</div>
+	</form>
 	<div class="sample">
 		<div class="sample-criterion">
 			<h3>Найдено: 3</h3>
-			<b class="sorting">Сортировка:</b>
-			<b class="sorting active">По цене</b>
-			<b class="sorting noactive">По типу</b>
-			<b class="sorting noactive">По рейтингу</b>
+			<span>Сортировка:</span>
+			<a href="#">По цене</a>
+			<a href="#">По типу</a>
+			<a href="#">По рейтингу</a>
 		</div>
 		<div class="catalog">
 			<div class="catalog-item clearfix">
@@ -73,9 +74,9 @@
 					<img src="img/amara.jpg" width="135" height="90" alt="Amara Resort & SPA">
 				</div>
 				<div class="catalog-description">
-					<h3 class="catalog-name">Amara Resort & SPA</h3>
+					<a href="#">Amara Resort & SPA</a>
 					<b class="catalog-type">Гостиница</b>
-					<b class="catalog-price">от 3500 р.</b><br>
+					<b class="catalog-price">от 3500 р.</b>
 					<button class="catalog-btn-more" type="submit">Подробнее</button>
 					<button class="catalog-btn-armor" type="submit">Забронировать</button>
 				</div>
@@ -86,9 +87,9 @@
 					<img src="img/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
 				</div>				
 				<div class="catalog-description">
-					<h3 class="catalog-name">Desert Quail Inn</h3>
+					<a href="#">Desert Quail Inn</a>
 					<b class="catalog-type">Мотель</b>
-					<b class="catalog-price">от 2000 р.</b><br>
+					<b class="catalog-price">от 2000 р.</b>
 					<button class="catalog-btn-more" type="submit">Подробнее</button>
 					<button class="catalog-btn-armor" type="submit">Забронировать</button>
 				</div>
@@ -99,9 +100,9 @@
 					<img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
 				</div>
 				<div class="catalog-description">
-					<h3 class="catalog-name">Villas at Poco Diablo</h3>
+					<a href="#">Villas at Poco Diablo</a>
 					<b class="catalog-type">Апартаменты</b>
-					<b class="catalog-price">от 4000 р.</b><br>
+					<b class="catalog-price">от 4000 р.</b>
 					<button class="catalog-btn-more" type="submit">Подробнее</button>
 					<button class="catalog-btn-armor" type="submit">Забронировать</button>
 				</div>
@@ -109,23 +110,23 @@
 			</div>
 		</div>
 	</div>
-	<footer class="footer-page">
+	<footer class="footer-page clearfix">
 		<div class="footer-visit">
-			#VISITSEDONA
+			<span>#VISITSEDONA</span>
 		</div>
 		<div class="footer-social">
-			<a href="#">
-				<img src="img/t.png" width="17" height="15" alt="Twitter">
+			<a class="soc twitter" href="#">
+				Twitter
 			</a>
-			<a href="#">
-				<img src="img/f.png" width="10" height="19" alt="Facebook">
+			<a class="soc facebook" href="#">
+				Facebook
 			</a>
-			<a href="#">
-				<img src="img/i.png" width="20" height="16" alt="Instagram">
+			<a class="soc youtube" href="#">
+				YouTube
 			</a>
 		</div>
 		<div class="footer-copyright">
-			Websity by <a href="#"><img src="img/html.png" alt="html academy"></a>
+			<span>Websity by</span><a href="#"> html academy</a>
 		</div>
 	</footer>
 	</body>
