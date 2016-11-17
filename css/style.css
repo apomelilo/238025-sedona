@@ -78,6 +78,15 @@ h4 {
 .hotel a:active {
 	color: #b2b2b2;
 }
+.header-main .active a {
+	color: #766357;
+}
+.main-menu .active a:hover {
+	color: #604e43;
+}
+.main-menu .active a:active {
+	color: #d6d0cc;
+}
 .logo {
 	position: absolute;
 	left: 50%;
@@ -238,19 +247,29 @@ h4 {
 	margin-bottom: 29px;
 	line-height: 26px;
 }
-.ddate::after {
-	content="";
-	background: transparent url("../img/spritesheet.png") no-repeat center;
+
+
+.ddate {
+	width: 298px;
+	padding-left: 13px;
 }
-.search-form input[type="text"]:hover {
+.search-form input.ddate {
+	padding-right: 35px;
+	background-image: url("../img/spritesheet.png");
+    background-position: 103% -8px;
+	background-repeat: no-repeat;
+}
+.search-form input.ddate:hover {
 	background-color: #ebebeb;
+	background-image: url("../img/spritesheet.png");
+    background-position: 103% -111px;
+	background-repeat: no-repeat;
 }
 .search-form input[type="text"]:active {
 	background-color: #ffffff;
-}
-.ddate {
-	width: 333px;
-	padding-left: 13px;
+	background-image: url("../img/spritesheet.png");
+    background-position: 103% -59px;
+	background-repeat: no-repeat;
 }
 .adults-quantity {
 	width: 112px;
@@ -420,6 +439,7 @@ h4 {
 	padding-top: 29px;
 	background-color: #ffffff;
 	padding-bottom: 31px;
+	position: relative;
 }
 .sample-criterion h3 {
 	margin: 0;
@@ -441,14 +461,42 @@ h4 {
 	color: #c7c7c7;
 	border-bottom: 1px dotted #81b3d2;
 }
-.sample-criterion a:hover {
+.sample-criterion a:hover:not(.active) {
 	color: #81b3d2;
 	border-bottom: 1px dotted #81b3d2;
 }
-.sample-criterion a:active {
+.sample-criterion a:active:not(.active) {
 	color: #000000;
 	border: none;
 }
+.sample-criterion .active {
+	color: #81b3d2;
+	border-bottom: none;
+}
+/*.sort-up {
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 11px solid #cccccc;
+	position: absolute;
+	right: 8%;
+	top: 41px;
+	text-decoration: none;
+}
+.sort-down {
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 11px solid #81b3d2;
+	position: absolute;
+	right: 6%;
+	top: 41px;
+	text-decoration: none;
+}
+.sort-up a:hover {
+	border-top: #ffffff;
+}
+.sort-up a:active {
+	border-top: #81b3d2;
+}*/
 .catalog-item {
 	padding-left: 6%;
 	padding-top: 31px;
