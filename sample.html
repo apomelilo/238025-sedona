@@ -6,7 +6,7 @@
 		<link href="css/style.css" rel="stylesheet">
 		<title>HTML Academy: Седона</title>
 	</head>
-	<body>
+	<body class="inner-page">
 		<header class="header-page">
 		<nav class="header-main clearfix">
 			<ul>
@@ -49,26 +49,44 @@
 				<label for="apartments">Апартаменты</label>
 			</div>
 		</div>
-		<div class="price-range">
-			<h4>Стоимость в сутки (р):</h4>
-			<table>
-				<tr>
-					<td>От 0</td>
-					<td>до 3000</td>
-				</tr>
-			</table>
-			<button type="submit">Показать</button>
+		<div class="filter-range">
+			<div class="filter-range-title">
+				Стоимость в сутки (р):
+			</div>
+			<div class="price-controls">
+				<label class="min-price">
+					от 
+					<input type="text" name="min-price" value="0">
+				</label>
+				<label class="max-price">
+					до 
+					<input type="text" name="max-price" value="3000">
+				</label>
+			</div>
+			<div class="range-controls">
+				<div class="scale">
+					<div class="bar">
+					</div>
+				</div>
+				<div class="range-toggle range-toggle-min">
+				</div>
+				<div class="range-toggle range-toggle-max">
+				</div>
+			</div>
+			<button class="btn-transparent" type="submit">
+				Показать
+			</button>
 		</div>
 	</form>
 	<div class="sample">
 		<div class="sample-criterion">
 			<h3>Найдено: 3</h3>
 			<span>Сортировка:</span>
-			<a class="active">По цене</a>
-			<a href="#">По типу</a>
-			<a href="#">По рейтингу</a>
-			<a class="sort-up" href="#"></a>
-			<a class="sort-down" href="#"></a>
+			<button class="sort active">По цене</button>
+			<button class="sort"><span>По типу</span></button>
+			<button class="sort"><span>По рейтингу</span></button>
+			<button class="sort-up">Вверх</button>
+			<button class="sort-down">Вниз</button>
 		</div>
 		<div class="catalog">
 			<div class="catalog-item clearfix">
@@ -82,6 +100,7 @@
 					<button class="catalog-btn-more" type="submit">Подробнее</button>
 					<button class="catalog-btn-armor" type="submit">Забронировать</button>
 				</div>
+				<img class="star" src="img/star-4.png" width="89" height="17">
 				<b class="rating">Рейтинг: 8,5</b>
 			</div>
 			<div class="catalog-item clearfix">
@@ -95,6 +114,7 @@
 					<button class="catalog-btn-more" type="submit">Подробнее</button>
 					<button class="catalog-btn-armor" type="submit">Забронировать</button>
 				</div>
+				<img class="star" src="img/star-2.png" width="42" height="17">
 				<b class="rating">Рейтинг: 8,9</b>
 			</div>
 			<div class="catalog-item clearfix">
@@ -108,6 +128,7 @@
 					<button class="catalog-btn-more" type="submit">Подробнее</button>
 					<button class="catalog-btn-armor" type="submit">Забронировать</button>
 				</div>
+				<img class="star" src="img/star-3.png" width="65" height="17">
 				<b class="rating">Рейтинг: 9,2</b>
 			</div>
 		</div>
@@ -128,7 +149,9 @@
 			</a>
 		</div>
 		<div class="footer-copyright">
-			<span>Websity by</span><a href="#"> html academy</a>
+			<div class="copyright">
+				<span>Websity by</span><a href="#"> html academy</a>
+			</div>
 		</div>
 	</footer>
 	</body>
