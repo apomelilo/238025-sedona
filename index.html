@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>HTML Academy: Седона</title>
 	</head>
@@ -10,7 +11,7 @@
 	<header class="header-page">
 		<nav class="header-main clearfix">
 			<ul>
-				<li class="main-info"><a href="sample.html">Информация</a></li>
+				<li class="main-info"><a href="catalog.html">Информация</a></li>
 				<li class="foto-video"><a href="#">Фото и видео</a></li>
 				<li class="hotel"><a href="#">Гостиницы</a></li>
 				<li class="card"><a href="#">Карта штата</a></li>
@@ -32,28 +33,29 @@
 				<p>— №1 —<br><br>
 				Седона - не аттракцион для туристов, там течет своя жизнь</p>
 			</div>
-			<img class="cause-foto-1" src="img/cause-foto1.jpg" alt="Фото города">
+			<div class="cause-foto">
+				<img class="cause-foto-1" src="img/cause-foto1.jpg" width="1600" height="800" alt="Фото города">
+			</div>
 		</div>
 		<div class="features clearfix">
 			<div class="features-item">
-				<img src="img/feature1.png" width="75" height="72" alt="Жилье">
 				<h3>Жилье</h3>
 				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 			</div>
 			<div class="features-item">
-				<img src="img/feature2.png" width="74" height="70" alt="Еда">
 				<h3>Еда</h3>
 				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 			</div>
 			<div class="features-item">
-				<img src="img/feature3.png" width="64" height="76" alt="Сувениры">
 				<h3>Сувениры</h3>
 				<p>Не только китайского, но и местного производства!</p>
 			</div>
 		</div>
-		<div class="cause clearfix">			
-			<img class="cause-foto-2" src="img/cause-foto2.jpg" alt="Фото города">
-			<div class="cause-description">
+		<div class="cause clearfix">
+			<div class="cause-foto left">
+				<img class="cause-foto-2" src="img/cause-foto2.jpg" width="1600" height="800" alt="Фото города">
+			</div>
+			<div class="cause-description right">
 				<h3>Там есть <br>мост дьявола</h3>
 				<p>- №2 -<br><br>
 				Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -94,9 +96,17 @@
 				<label class="tdate" for="departure-date">Дата выезда:</label>
 				<input class="ddate" type="text" value="4 июля 2016" name="departure-date" id="departure-date">
 				<label class="adults" for="adults">Взрослые:</label>
-				<input class="adults-quantity" type="text" value="2" name="adults" id="adults">
+				<div class="number">
+					<button class="quantity minus" type="button"></button>
+					<input class="adults-quantity" type="text" value="2" name="adults" id="adults">
+					<button class="quantity plus" type="button"></button>
+				</div>
 				<label class="children" for="children">Дети:</label>
-				<input class="children-quantity" type="text" value="0" name="children" id="children">
+				<div class="number child">
+					<button class="quantity minus" type="button"></button>
+					<input class="children-quantity" type="text" value="0" name="children" id="children">
+					<button class="quantity plus" type="button"></button>
+				</div>
 				<button class="btn" type="submit">Найти</button>
 			</div>
 		</form>	
