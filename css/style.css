@@ -273,18 +273,45 @@ h4 {
 	margin-right: auto;
 	line-height: 24px;
 }
+
 .map {
-	width: auto;
-	max-width: 1200px;
+	width: 100%;
 }
+
 .search-form {
 	width: 568px;
 	background-color: #ffffff;
+	display: block;
+	
+}
+.search-form-close {
+	display: none;
+}
+.search-form-open {
+	display: block;
+	animation: appearance 1s linear;
+}
+@keyframes appearance {
+	0% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0.7;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 .search-title {
 	width: 569px;
 	padding-top: 29px;
-	padding-bottom: 33px;
+	padding-bottom: 30px;
 	background-color: #766357;
 	color: #ffffff;
 	text-align: center;
@@ -295,6 +322,8 @@ h4 {
 	line-height: 26px;
 	margin-top: 33px;
 	text-transform: uppercase;
+	position: relative;
+	z-index: 5;
 }
 .search-input {
 	position: absolute;
