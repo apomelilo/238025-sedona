@@ -6,18 +6,13 @@ var adults=document.querySelector("[name=adults]");
 var children=document.querySelector("[name=children]");
 
 btn.addEventListener("click", function(event){
-	event.preventDefault();
-	form.classList.add("search-form-close");
-});	
-/*btn.addEventListener("click", function(event){	
-	if (!form) {
-		event.preventDefault();
+	event.preventDefault();	
+	if (!form.classList.contains("search-form-close")) {
 		form.classList.add("search-form-close");
 	} else {
-		event.preventDefault();
-		form.classList.add("search-form-open");
+		form.classList.remove("search-form-close");
 	}
-});*/
+});
 form.addEventListener("submit", function(event) {
 	event.preventDefault();
 	localStorage.setItem("arrival", arrival-date.value);

@@ -80,19 +80,21 @@ h4 {
 .hotel a:active {
 	color: #b2b2b2;
 }
-.header-main .active a {
+.header-active a {
 	color: #766357;
 }
-.main-menu .active a:hover {
+.header-active a:hover {
 	color: #604e43;
 }
-.main-menu .active a:active {
+.header-active a:active {
 	color: #d6d0cc;
 }
 .logo {
 	position: absolute;
 	left: 50%;
-	transform: translate(-50%, 0);
+	top: 0;
+	-webkit-transform: translate(-50%, 0);
+	        transform: translate(-50%, 0);
 	z-index: 10;
 }
 .info {
@@ -149,7 +151,6 @@ h4 {
 	width: 33%;
 	background-color: #81b3d2;
 	text-align: center;
-	height: 256px;
 	color: #ffffff;
 	display: inline-block;
 	vertical-align: middle;
@@ -163,10 +164,38 @@ h4 {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 54px;
+	margin-bottom: 12px;
 }
 .cause p {
-	padding-left: 12%;
-	padding-right: 12%;
+	margin: 10px;
+	margin-bottom: 54px;
+}
+.cause .item {	
+	line-height: 42px;
+	margin: 10px;
+	position: relative;
+}
+.cause .item:before {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 10px;
+	background-color: #ffffff;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-260%, 0);
+	        transform: translate(-260%, 0);
+}
+.cause .item:after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 10px;
+	background-color: #ffffff;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(140%, 0);
+	        transform: translate(140%, 0);
 }
 .cause-foto {
 	width: 67%;
@@ -208,19 +237,22 @@ h4 {
 	background: url("../img/feature1.png") no-repeat;
 	position: absolute;
 	left: 50%;
-	transform: translate(-50%, -80px);
+	-webkit-transform: translate(-50%, -80px);
+	        transform: translate(-50%, -80px);
 }
 .features-item:nth-child(2):before {
 	width: 74px;
 	height: 70px;
 	background: url("../img/feature2.png") no-repeat;
-	transform: translate(-50%, -77px);
+	-webkit-transform: translate(-50%, -77px);
+	        transform: translate(-50%, -77px);
 }
 .features-item:nth-child(3):before {
 	width: 64px;
 	height: 76px;
 	background: url("../img/feature3.png") no-repeat;
-	transform: translate(-50%, -83px);
+	-webkit-transform: translate(-50%, -83px);
+	        transform: translate(-50%, -83px);
 }
 .features-item  p {
 	padding-left: 18%;
@@ -243,6 +275,7 @@ h4 {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0;
+	margin-bottom: 24px;
 }
 .causes-item {
 	padding-top: 46px;
@@ -252,8 +285,32 @@ h4 {
 	text-align: center;	
 }
 .causes-item  p {
-	padding-left: 17%;
-	padding-right: 17%;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin: 20px;
+	position: relative;
+}
+.causes-item  .item:before {
+	content: "";
+	height: 1px;
+	width: 10px;
+	background-color: #000000;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-260%, 0);
+	        transform: translate(-260%, 0);
+	position: absolute;
+}
+.causes-item  .item:after {
+	content: "";
+	height: 1px;
+	width: 10px;
+	background-color: #000000;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(140%, 0);
+	        transform: translate(140%, 0);
+	position: absolute;
 }
 .search {
 	position: relative;
@@ -276,36 +333,54 @@ h4 {
 
 .map {
 	width: 100%;
+	frameborder: 0;
+	border: 0;
 }
 
 .search-form {
 	width: 568px;
 	background-color: #ffffff;
 	display: block;
-	
+	-webkit-animation: appearance 1s linear;
+	        animation: appearance 1s linear;
 }
 .search-form-close {
 	display: none;
 }
-.search-form-open {
-	display: block;
-	animation: appearance 1s linear;
-}
-@keyframes appearance {
+@-webkit-keyframes appearance {
 	0% {
-		opacity: 1;
+		opacity: 0;
 	}
 	30% {
-		opacity: 0.7;
+		opacity: 0.3;
 	}
 	50% {
 		opacity: 0.5;
 	}
 	70% {
-		opacity: 0.3;
+		opacity: 0.7;
 	}
 	100% {
+		opacity: 1;
+		
+	}
+}
+@keyframes appearance {
+	0% {
 		opacity: 0;
+	}
+	30% {
+		opacity: 0.3;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: 0.7;
+	}
+	100% {
+		opacity: 1;
+		
 	}
 }
 .search-title {
@@ -329,7 +404,8 @@ h4 {
 	position: absolute;
 	top: 290px;
 	left: 50%;
-	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	        transform: translate(-50%, 0);
 	padding: 55px;
 	background-color: #ffffff;
 	width: 500px;
@@ -365,19 +441,19 @@ h4 {
 .search-form input.ddate {
 	padding-right: 35px;
 	background-image: url("../img/spritesheet.png");
-    background-position: 103% -8px;
+    background-position: 103% -70px;
 	background-repeat: no-repeat;
 }
 .search-form input.ddate:hover {
 	background-color: #ebebeb;
 	background-image: url("../img/spritesheet.png");
-    background-position: 103% -111px;
+    background-position: 103% -194px;
 	background-repeat: no-repeat;
 }
 .search-form input.ddate:active {
 	background-color: #ffffff;
 	background-image: url("../img/spritesheet.png");
-    background-position: 103% -59px;
+    background-position: 103% -132px;
 	background-repeat: no-repeat;
 }
 .adults-quantity {
@@ -442,7 +518,8 @@ h4 {
 	background-color: #a9a9a9;
 	top: 6px;
 	left: 11px;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
 }
 .plus:hover:before,
 .plus:hover:after  {
@@ -516,7 +593,8 @@ h4 {
 	display: inline;
 	font-size: 14px;
 	line-height: 26px;
-	transform: translate(0, -25%);
+	-webkit-transform: translate(0, -25%);
+	        transform: translate(0, -25%);
 }
 
 .footer-copyright a {
@@ -533,25 +611,26 @@ h4 {
 .footer-copyright a:active {
 	background: transparent url("../img/html-down.png") no-repeat center center;
 }
-.soc {
+.social {
 	display: inline-block;
 	width: 46px;
 	height: 48px;
 	margin-left: 2px;
 	font-size: 0;
 	vertical-align: top;
-	transform: translate(0, -25%);
+	-webkit-transform: translate(0, -25%);
+	        transform: translate(0, -25%);
 	text-decoration: none;
 	background: #81b3d2 url("../img/spritesheet.png") no-repeat center;
 }
 .twitter {
-    background-position: 0px -307px;
+    background-position: -5px -430px;
 }
 .facebook {
-	background-position: 3px -262px;
+	background-position: -2px -373px;
 }
 .youtube {
-	background-position: -1px -353px;
+	background-position: -7px -485px;
 }
 .footer-social a:hover {
 	background-color: #669ec0;
@@ -595,19 +674,19 @@ h4 {
 	width: 26px;
 	height: 22px;
 	background: url("../img/spritesheet.png") no-repeat center center;
-	background-position: -15px -171px;
+	background-position: -20px -263px;
 	top: 24px;
 	left: 0;
 }
 .criterion input[type="checkbox"]:checked + label::before {
-	background-position: -15px -223px;
+	background-position: -20px -325px;
 }
 .criterion input[type="checkbox"]:checked:disabled + label::before {
-	background-position: -15px -223px;
+	background-position: -20px -325px;
 	opacity: 0.5;
 }
 .criterion input[type="checkbox"]:disabled + label::before {
-	background-position: -15px -171px;
+	background-position: -20px -263px;
 	opacity: 0.5;
 }
 .type {
@@ -647,7 +726,8 @@ h4 {
 	width: 2px;
 	height: 22px;
 	background: #ffffff;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .price-controls label {
@@ -889,6 +969,7 @@ h4 {
 	font-weight: bold;
 	margin-right: 2px;
 	vertical-align: bottom;
+	text-transform: uppercase;
 }
 .catalog-btn-more:hover {
 	background-color: #669ec0;
@@ -907,6 +988,7 @@ h4 {
 	color: #ffffff;
 	font-weight: bold;
 	vertical-align: bottom;
+	text-transform: uppercase;
 }
 .catalog-btn-armor:hover {
 	background-color: #604e43;
@@ -916,25 +998,38 @@ h4 {
 	color: #857871;
 }
 .catalog-item .star {
-	position: absolute;
-	right: 6%;
+	float: right;
+	padding-right: 6%;
+	text-align: right;
+}
+.star ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.star li {
+	display: inline-block;
+	text-align: right;
+	width: 18px;
+	height: 17px;
+	background: url("../img/spritesheet.png") no-repeat center center;
+	background-position: -20px -20px;
 }
 .rating {
 	float: right;
-	margin-right: 6%;
 	width: 110px;
 	height: 24px;
 	color: #8b8b8b;
 	background-color: #f2f2f2;
 	font-size: 14px;
 	line-height: 21px;
-	margin-top: 62px;
 	text-align: center;
 	font-weight: normal;
 	padding-top: 3px;
+	margin-top: 40px;
 }
 .clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
-}
