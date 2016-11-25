@@ -200,7 +200,6 @@ h4 {
 .cause-foto {
 	width: 67%;
 	float: right;
-	max-height: 256px;
 	position: relative;
 	z-index: 3;
 }
@@ -1033,3 +1032,4 @@ h4 {
 	content: "";
 	display: table;
 	clear: both;
+}
